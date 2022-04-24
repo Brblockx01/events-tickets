@@ -1,0 +1,53 @@
+@import '../../../scss/root/index';
+
+.header-container
+{
+    color: white;
+    // background: url(../../../assets/stadiumbackground.jpeg);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 7%, rgba(0,0,0,0.8912158613445378) 41%, rgba(0,0,0,0.5494791666666667) 55%, rgba(255,255,255,0) 67%, rgba(255,255,255,0) 77%), url(../../../assets/stadiumbackground.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 30% 30%;
+    font-family: $rationale;
+}
+
+.logo-container
+{
+    margin-left: 1.5rem;
+
+    h1
+    {
+        font-size: 8rem;
+        font-weight: 500;
+    }
+}
+
+.header-links
+{
+    display: flex;
+
+    .link
+    {
+        list-style: none;
+        margin: 1rem 2rem;
+
+        a
+        {
+            font-size: 1.5rem;
+            text-decoration: none;
+            color: white;
+
+            transition: all .3s;
+
+            &:hover
+            {
+                color: rgb(50, 50, 50);
+            }
+
+            &:active
+            {
+                color: black;
+            }
+        }
+    }
+}

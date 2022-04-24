@@ -1,0 +1,6 @@
+export { default as bonjovi } from './bonjovi.png'
+export { default as imaginedragons } from './imaginedragons.png'
+export { default as ironmaiden } from './ironmaiden.png'
+export { default as judaspriest } from './judaspriest.png'
+export { default as ozzyosbourne } from './ozzyosbourne.png'
+export { default as tameimpala } from './tameimpala.png'
