@@ -1,0 +1,17 @@
+@import '../../../scss/root/index';
+
+.footer-container
+{
+    font-family: $rationale;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    
+    .footer-icon
+    {
+        cursor: pointer;
+        font-size: 5rem;
+        margin: 30px;
+        color: white;
+    }
+}

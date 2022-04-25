@@ -6,7 +6,28 @@ import { bonjovi, imaginedragons, ironmaiden, judaspriest, ozzyosbourne, tameimp
 const Events = () => {
   return (
     <div className='events-container'>
-      <h1>Events</h1>
+      <div className='header-container'>
+      <div className="logo-container">
+        <h1>ROCK FESTIVAL</h1>
+      </div>
+      <div className="divider"></div>
+      <div className="header-links">
+        <li className="link">
+          <a href="#">Open Air Area</a>
+        </li>
+        <li className="link">
+          <a href="#">Events</a>
+        </li>
+        <li className="link">
+          <a href="#">About</a>
+        </li>
+        <li className="link">
+          <a href="#">Contact</a>
+        </li>
+      </div>
+      <div className="divider"></div>
+    </div>
+      <h1 className='events-title'>Events</h1>
       <div className="events-text-card-container">
         <div className="events-text-card">
           <p>Lorem ipsum dolor sit amet consectetur <br />
@@ -23,7 +44,10 @@ const Events = () => {
         <Event artistName="Ozzy Osbourne" importedImage={ozzyosbourne}/>
         <Event artistName="Tame Impala" importedImage={tameimpala}/>
       </div>
-      <button className="event-load-more-button">Load More...</button>
+      <div className="event-button-container">
+        <button className="event-load-more-button">Load More...</button>
+      </div>
+      <div className="divider"></div>
     </div>
   )
 }

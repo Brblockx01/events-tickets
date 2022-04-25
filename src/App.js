@@ -1,10 +1,10 @@
 import './scss/App.css'
-import { Header, Events, Extra, Footer } from './components/index';
+import { Events, Extra, Footer } from './components/index';
 
 function App() {
   return (
     <div className="full-app-container">
-      <Header />
+      {/* <Header /> */}
       <Events />
       <Extra />
       <Footer />

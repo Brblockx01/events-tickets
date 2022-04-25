@@ -11,4 +11,7 @@
 {
     // background-color: rgb(203, 203, 203);
     color: rgb(0, 0, 0);
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
 }

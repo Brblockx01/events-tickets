@@ -1,22 +1,80 @@
 @import '../../../scss/root/index';
 
+.header-container
+{
+    height: 13rem;
+    color: white;
+    /* Created with https://www.css-gradient.com */
+    font-family: $rationale;
+}
+
+.logo-container
+{
+    margin-left: 1.5rem;
+
+    h1
+    {
+        font-size: 8rem;
+        font-weight: 500;
+    }
+}
+
+.header-links
+{
+    display: flex;
+
+    .link
+    {
+        list-style: none;
+        margin: 1rem 2rem;
+
+        a
+        {
+            font-size: 1.5rem;
+            text-decoration: none;
+            color: white;
+
+            transition: all .3s;
+
+            &:hover
+            {
+                color: rgb(220, 220, 220);
+            }
+
+            &:active
+            {
+                color: white;
+            }
+        }
+    }
+}
+
 .events-container
 {
     font-family: $rationale;
-    background-color: rgb(170, 170, 170);
+    background: linear-gradient(to bottom, #ffffff00, #010101 80%), url(../../../assets/stadiumbackground.jpeg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .events-title
+    {
+        text-align: center;
+        color: white;
+        font-size: 5rem;
+        margin: 20px;
+    }
 }
 
 .events-text-card-container
 {
-    box-shadow: 0px 0px 14px 1px rgba(0,0,0,0.2);
     background: url(../../../assets/concertbackground.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 100% 100%;
-    height: 15rem;
-    border-radius: 3px;
+    height: 16rem;
+    border-radius: 2px;
     background-color: rgb(216, 216, 216);
-    margin: 1.5rem;
+    margin: 1.8rem;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -24,13 +82,12 @@
     .events-text-card
     {
         height: 12rem;
-        border-radius: 3px;
+        border-radius: 2px;
         padding: 15px;
         // float: right;
         display: inline-block;
         margin: 2rem;
-        background-color: rgba(211, 211, 211, 0.85);
-        box-shadow: 0px 0px 14px 1px rgba(0,0,0,0.2);
+        background-color: rgba(211, 211, 211, 0.8);
 
         p
         {
@@ -50,20 +107,30 @@
 
     .event-container
     {
-        background-color: white;
+        background-color: rgb(224, 224, 224);
         padding: 20px;
-        border-radius: 3px;
-        box-shadow: 0px 0px 14px 1px rgba(0,0,0,0.2);
+        border-radius: 2px;
+        box-shadow: 0px 0px 14px 1px rgba(0, 151, 201, 0.5);
+        animation:pop-in 0.5s;
+
+        transition: all .3s;
+
+        &:hover
+        {
+            background-color: #ffffff;
+        }
     
         img
         {
-            height: 350px;
-            width: 350px;
-            border-radius: 3px;
+            height: 330px;
+            width: 330px;
+            border-radius: 2px;
+            box-shadow: 0px 0px 14px 1px rgba(201, 0, 151, 0.15);
         }
 
         .artist-name
         {
+            color: black;
             text-align: center;
             margin: 1.5rem;
             font-size: 2rem;
@@ -78,21 +145,86 @@
             display: flex;
             justify-content: center;
             padding: 10px;
-            border-radius: 3px;
+            border-radius: 2px;
             background-color: black;
             color: white;
             text-decoration: none;
+
+            border: solid 2px transparent;
+            
+            transition: all .3s;
+
+            &:hover 
+            {
+                background-color: white;
+                color: black;
+                border: solid 2px black;
+                // box-shadow: 0px 0px 14px 1px rgba(201, 0, 151, 0.1);
+            }
+        }
+
+        .event-icon-container
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .location-icon
+            {
+                color: black;
+                font-size: 2rem;
+            }
+
+            p
+            {
+                font-size: 1.2rem;
+            }
+        }
+
+    }
+}
+
+    @keyframes pop-in {
+    0% { opacity: 0; transform: scale(0.5); }
+    100% { opacity: 1; transform: scale(1); }
+    }
+
+
+.event-button-container
+{
+    display: flex;
+    justify-content: center;
+    
+    .event-load-more-button
+    {
+        cursor: pointer;
+        font-family: $rationale;
+        border: none;
+        border-radius: 2px;
+        padding: 20px;
+        font-size: 2rem;
+        justify-content: center;
+        margin: 3rem;
+        color: black;
+        background-color: white;
+        border: solid 2px transparent;
+
+        transition: all .3s;
+
+        &:hover
+        {
+            color: white;
+            background-color: black;
+            border: solid 2px white;
         }
     }
 }
 
-.event-load-more-button
+
+.divider
 {
-    cursor: pointer;
-    border: none;
-    border-radius: 3px;
-    padding: 20px;
-    font-size: 2rem;
-    color: white;
-    background-color: blue;
+    background-color: rgb(6, 93, 125);
+    box-shadow: 0px 0px 14px 1px rgba(201, 0, 151, 0.2);
+    // box-shadow: 0px 0px 14px 1px rgba(0, 151, 201, 0.5);
+    padding: 1px;
 }

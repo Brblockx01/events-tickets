@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Rationale&display=swap");
+.footer-container {
+  font-family: "Rationale", sans-serif;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+
+.footer-container .footer-icon {
+  cursor: pointer;
+  font-size: 5rem;
+  margin: 30px;
+  color: white;
+}
+/*# sourceMappingURL=Footer.css.map */
