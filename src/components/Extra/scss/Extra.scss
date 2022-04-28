@@ -17,6 +17,7 @@
 
 .extra-box
 {
+    // background-color: transparent;
     display: inline-block;
     margin: 10px;
     padding: 10px;
@@ -24,4 +25,9 @@
     background-color: white;
     color: black;
     font-size: 1.5rem;
+
+    p
+    {
+        background-color: transparent;
+    }
 }

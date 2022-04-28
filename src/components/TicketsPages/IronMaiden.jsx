@@ -1,8 +1,13 @@
-import React from 'react'
+import React from 'react';
+import TicketPage from './TicketPage/TicketPage';
+import './TicketPage/scss/TicketPage.css'
+import { ironmaiden } from '../../assets';
 
 const IronMaiden = () => {
   return (
-    <div>IronMaiden</div>
+    <div className='tickets-page-container'>
+      <TicketPage bandImage={ironmaiden} bandName="Iron Maiden"/>
+    </div>
   )
 }
 

@@ -1,10 +1,10 @@
 import './scss/App.css'
 import { Events, Extra, Footer } from './components/index';
+// import IronMaiden from './components/TicketsPages/IronMaiden';
 
 function App() {
   return (
     <div className="full-app-container">
-      {/* <Header /> */}
       <Events />
       <Extra />
       <Footer />

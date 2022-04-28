@@ -1,7 +1,8 @@
 import React from 'react';
 import { HiLocationMarker } from 'react-icons/hi';
+import { Link } from "react-router-dom";
 
-const Event = ({ artistName, importedImage }) => {
+const Event = ({ artistName, importedImage, linkTo }) => {
   return (
     <div className='event-container'>
         <img src={importedImage} alt="" />
@@ -11,7 +12,8 @@ const Event = ({ artistName, importedImage }) => {
           <p>Event Location</p>
           <p>XX/XX/XXXX</p>
         </div>
-        <a href="" className='buy-ticket-link'>Buy Tickets</a>
+          {/* <Route path={routePath} element={routeElement}>Buy Tickets</Route> */}
+          <Link to={linkTo} className='buy-ticket-link'>Buy Tickets</Link>
     </div>
   )
 }

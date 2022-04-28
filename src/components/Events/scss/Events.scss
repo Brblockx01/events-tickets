@@ -2,6 +2,7 @@
 
 .header-container
 {
+    background-color: transparent;
     height: 13rem;
     color: white;
     /* Created with https://www.css-gradient.com */
@@ -11,9 +12,11 @@
 .logo-container
 {
     margin-left: 1.5rem;
-
+    background-color: transparent;
+    
     h1
     {
+        background-color: transparent;
         font-size: 8rem;
         font-weight: 500;
     }
@@ -22,14 +25,17 @@
 .header-links
 {
     display: flex;
-
+    background-color: transparent;
+    
     .link
     {
         list-style: none;
         margin: 1rem 2rem;
-
+        background-color: transparent;
+        
         a
         {
+            background-color: transparent;
             font-size: 1.5rem;
             text-decoration: none;
             color: white;
@@ -58,6 +64,7 @@
 
     .events-title
     {
+        background-color: transparent;
         text-align: center;
         color: white;
         font-size: 5rem;
@@ -91,6 +98,7 @@
 
         p
         {
+            background-color: transparent;
             font-size: 1.2rem;
             text-align: center;
             margin: 10px;
@@ -100,6 +108,7 @@
 
 .event-cards-container
 {
+    background-color: transparent;
     display: grid;
     grid-template-columns: repeat(3, auto);
     justify-content: space-evenly;
@@ -130,6 +139,7 @@
 
         .artist-name
         {
+            background-color: transparent;
             color: black;
             text-align: center;
             margin: 1.5rem;
@@ -165,18 +175,21 @@
 
         .event-icon-container
         {
+            background-color: transparent;
             display: flex;
             flex-direction: column;
             align-items: center;
 
             .location-icon
             {
+                background-color: transparent;
                 color: black;
                 font-size: 2rem;
             }
 
             p
             {
+                background-color: transparent;
                 font-size: 1.2rem;
             }
         }

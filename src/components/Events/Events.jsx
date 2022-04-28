@@ -2,10 +2,15 @@ import React from 'react';
 import Event from './Event/Event';
 import './scss/Events.css';
 import { bonjovi, imaginedragons, ironmaiden, judaspriest, ozzyosbourne, tameimpala } from '../../assets';
+// import { Routes, Route } from "react-router-dom";
+import IronMaiden from '../TicketsPages/IronMaiden';
 
 const Events = () => {
   return (
     <div className='events-container'>
+      {/* <Routes>
+        <Route path="IronMaiden" element={<IronMaiden />} />
+      </Routes> */}
       <div className='header-container'>
       <div className="logo-container">
         <h1>ROCK FESTIVAL</h1>
@@ -37,12 +42,12 @@ const Events = () => {
         </div>
       </div>
       <div className="event-cards-container">
-        <Event artistName="Bon Jovi" importedImage={bonjovi}/>
-        <Event artistName="Imagine Dragons" importedImage={imaginedragons}/>
-        <Event artistName="Iron Maiden" importedImage={ironmaiden}/>
-        <Event artistName="Judas Priest" importedImage={judaspriest}/>
-        <Event artistName="Ozzy Osbourne" importedImage={ozzyosbourne}/>
-        <Event artistName="Tame Impala" importedImage={tameimpala}/>
+        <Event artistName="Bon Jovi" importedImage={bonjovi} linkTo={"BonJovi"}/>
+        <Event artistName="Imagine Dragons" importedImage={imaginedragons} linkTo={"ImagineDragons"}/>
+        <Event artistName="Iron Maiden" importedImage={ironmaiden} linkTo={"IronMaiden"}/>
+        <Event artistName="Judas Priest" importedImage={judaspriest} linkTo={"JudasPriest"}/>
+        <Event artistName="Ozzy Osbourne" importedImage={ozzyosbourne} linkTo={"OzzyOsbourne"}/>
+        <Event artistName="Tame Impala" importedImage={tameimpala} linkTo={"TameImpala"}/>
       </div>
       <div className="event-button-container">
         <button className="event-load-more-button">Load More...</button>
