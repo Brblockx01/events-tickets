@@ -8,12 +8,12 @@ const Event = ({ artistName, importedImage, linkTo }) => {
         <img src={importedImage} alt="" />
         <h2 className='artist-name'>{artistName}</h2>
         <div className="event-icon-container">
-          <HiLocationMarker className='location-icon' />
+          <p>Date: XX/XX/XXXX</p>
           <p>Event Location</p>
-          <p>XX/XX/XXXX</p>
+          <HiLocationMarker className='location-icon' />
         </div>
           {/* <Route path={routePath} element={routeElement}>Buy Tickets</Route> */}
-          <Link to={linkTo} className='buy-ticket-link'>Buy Tickets</Link>
+          {/* <Link to={linkTo} className='buy-ticket-link'>Buy Tickets</Link> */}
     </div>
   )
 }

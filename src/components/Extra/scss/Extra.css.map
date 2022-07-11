@@ -1,10 +1,1 @@
-{
-    "version": 3,
-    "mappings": "ACAA,OAAO,CAAC,sEAAI;ADEZ,AAAA,gBAAgB,CAChB;EACI,WAAW,ECFH,WAAW,EAAE,UAAU;EDG/B,KAAK,EAAE,KAAK;EACZ,gBAAgB,EAAE,KAAK;CAC1B;;AAED,AAAA,sBAAsB,CACtB;EACI,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,WAAW,EAAE,UAAU;EACvB,MAAM,EAAE,IAAI;CACf;;AAED,AAAA,UAAU,CACV;EAEI,OAAO,EAAE,YAAY;EACrB,MAAM,EAAE,IAAI;EACZ,OAAO,EAAE,IAAI;EACb,aAAa,EAAE,GAAG;EAClB,gBAAgB,EAAE,KAAK;EACvB,KAAK,EAAE,KAAK;EACZ,SAAS,EAAE,MAAM;CAMpB;;AAfD,AAWI,UAXM,CAWN,CAAC,CACD;EACI,gBAAgB,EAAE,WAAW;CAChC",
-    "sources": [
-        "Extra.scss",
-        "../../../scss/root/_index.scss"
-    ],
-    "names": [],
-    "file": "Extra.css"
-}
+{"version":3,"sourceRoot":"","sources":["../../../scss/root/_index.scss","Extra.scss"],"names":[],"mappings":"AAAQ;ACER;EAEI,aDFQ;ECGR;EACA;;;AAGJ;EAEI;EACA;EACA;EACA;;;AAGJ;EAGI;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EAEI","file":"Extra.css"}

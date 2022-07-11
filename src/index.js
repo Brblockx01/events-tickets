@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
 // import IronMaiden from './components/TicketsPages/IronMaiden';
-import { BonJovi, ImagineDragons, IronMaiden, JudasPriest, OzzyOsbourne, TameImpala  } from './components/TicketsPages';
+import { BuyPage } from './components/TicketsPages';
 import './index.css';
 import App from './App';
 
@@ -13,12 +13,13 @@ root.render(
     {/* <App /> */}
     <Routes>
       <Route path="/" element={<App />} />
-      <Route path="BonJovi" element={<BonJovi />} />
+      {/* <Route path="ArcNorth" element={<ArcNorth />} />
       <Route path="ImagineDragons" element={<ImagineDragons />} />
-      <Route path="IronMaiden" element={<IronMaiden />} />
-      <Route path="JudasPriest" element={<JudasPriest />} />
-      <Route path="OzzyOsbourne" element={<OzzyOsbourne />} />
-      <Route path="TameImpala" element={<TameImpala />} />
+      <Route path="Galantis" element={<Galantis />} />
+      <Route path="Figure" element={<Figure />} />
+      <Route path="Skrillex" element={<Skrillex />} />
+      <Route path="TameImpala" element={<TameImpala />} /> */}
+      <Route path="BuyPage" element={<BuyPage />} />
     </Routes>
   </BrowserRouter>
 );

@@ -1,10 +1,1 @@
-{
-    "version": 3,
-    "mappings": "ACAA,OAAO,CAAC,sEAAI;ADEZ,AAAA,CAAC,CACD;EACI,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;EACtB,gBAAgB,EAAE,KAAY;CACjC;;AAED,AAAA,mBAAmB,CACnB;EAEI,KAAK,EAAE,KAAY;EACnB,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,IAAI;EAC3B,kBAAkB,EAAE,cAAc;CACrC",
-    "sources": [
-        "app.scss",
-        "root/_index.scss"
-    ],
-    "names": [],
-    "file": "app.css"
-}
+{"version":3,"sourceRoot":"","sources":["root/_index.scss","App.scss"],"names":[],"mappings":"AAAQ;ACER;EAEI;EACA;EACA;EACA;;;AAGJ;EAGI;EACA;EACA;EACA","file":"App.css"}

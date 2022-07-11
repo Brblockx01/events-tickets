@@ -11,8 +11,12 @@
 
     h1
     {
+        border: solid 2px white;
         text-align: center;
-        margin: 2rem;
+        
+        margin: 2rem 40%;
+        padding: 10px;
+        border-radius: 2px;
     }
 
     h3
@@ -77,18 +81,6 @@
     }
 }
 
-.qrcode-container
-{
-    display: flex;
-    justify-content: center;
-    margin: 3rem;
-
-    img
-    {
-        height: 200px;
-    }
-}
-
 .buy-tickets-btn-container
 {
     display: flex;
@@ -114,5 +106,18 @@
             background-color: transparent;
             color: white;
         }
+    }
+}
+
+.qrcode-container
+{
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+
+    img
+    {
+        height: 300px;
+        width: 300px;
     }
 }

@@ -6,7 +6,7 @@ const Extra = () => {
     <div className='extra-container'>
       <div className="extra-boxes-container">
         <div className="extra-box">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, eum?</p>
+          <p>Drinks and beverages brought from outside the event are not allowed unless it's water.</p>
         </div>
         <div className="extra-box">
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate amet <br /> 
