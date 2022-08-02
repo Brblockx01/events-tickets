@@ -55,7 +55,7 @@ const Events = () => {
       </div>
       <div className="event-button-container">
         {/* <button className="event-load-more-button">Show More Artists...</button> */}
-        <Link to="BuyPage" className="event-load-more-button">Buy Tickets For Event</Link>
+        <Link to="BuyPage" className="event-buy-button">Buy Tickets For Event</Link>
         {/* <Link></Link> */}
       </div>
       <div className="divider"></div>

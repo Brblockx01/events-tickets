@@ -1,245 +1,537 @@
-@import '../../../scss/root/index';
+@import "../../../scss/root/index";
 
-.header-container
-{
-    background-color: transparent;
-    height: 13rem;
-    color: white;
-    /* Created with https://www.css-gradient.com */
-    font-family: $rationale;
+.header-container {
+  background-color: transparent;
+  height: 13rem;
+  color: white;
+  font-family: $rationale;
 }
 
-.logo-container
-{
-    margin-left: 1.5rem;
+.logo-container {
+  margin-left: 1.5rem;
+  background-color: transparent;
+
+  h1 {
     background-color: transparent;
-    
-    h1
-    {
-        background-color: transparent;
-        text-shadow: 0px 0px 25px #ffffff42;
-        font-size: 8rem;
-        font-weight: 500;
-    }
+    text-shadow: 0px 0px 25px #ffffff42;
+    font-size: 8rem;
+    font-weight: 500;
+  }
 }
 
-.header-links
-{
-    display: flex;
+.header-links {
+  display: flex;
+  background-color: transparent;
+
+  .link {
+    list-style: none;
+    margin: 1rem 2rem;
     background-color: transparent;
-    
-    .link
-    {
-        list-style: none;
-        margin: 1rem 2rem;
-        background-color: transparent;
-        
-        a
-        {
-            background-color: transparent;
-            font-size: 1.5rem;
-            text-decoration: none;
-            color: white;
 
-            transition: all .3s;
+    a {
+      background-color: transparent;
+      font-size: 1.5rem;
+      text-decoration: none;
+      color: white;
 
-            &:hover
-            {
-                color: rgb(220, 220, 220);
-            }
+      transition: all 0.3s;
 
-            &:active
-            {
-                color: white;
-            }
-        }
-    }
-}
+      &:hover {
+        color: rgb(220, 220, 220);
+      }
 
-.events-container
-{
-    font-family: $rationale;
-    background: linear-gradient(to bottom, #ffffff00, #010101 80%), url(../../../assets/stadiumbackground.jpeg) ;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    .events-title
-    {
-        background-color: transparent;
-        text-align: center;
+      &:active {
         color: white;
-        font-size: 5rem;
-        margin: 20px;
+      }
     }
+  }
 }
 
-.events-text-card-container
-{
-    background: url(../../../assets/concertbackground.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 100% 100%;
-    height: 16rem;
-    border-radius: 2px;
-    background-color: rgb(216, 216, 216);
-    margin: 1.8rem;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+.events-container {
+  font-family: $rationale;
+  background: linear-gradient(to bottom, #ffffff00, #010101 80%),
+    url(../../../assets/stadiumbackground.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
 
-    .events-text-card
-    {
-        height: 12rem;
-        border-radius: 2px;
-        padding: 15px;
-        // float: right;
-        display: inline-block;
-        margin: 2rem;
-        background-color: rgba(211, 211, 211, 0.8);
-
-        p
-        {
-            background-color: transparent;
-            font-size: 1.2rem;
-            text-align: center;
-            margin: 10px;
-        }
-    }
-}
-
-.event-cards-container
-{
+  .events-title {
     background-color: transparent;
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    justify-content: space-evenly;
-    grid-gap: 3rem;
-
-    .event-container
-    {
-        background-color: rgba(255, 255, 255, 0.95);
-        padding: 20px;
-        border-radius: 2px;
-        box-shadow: 0px 0px 14px 1px rgba(0, 151, 201, 0.5);
-        animation:pop-in 0.5s;
-
-        transition: all .3s;
-
-        &:hover
-        {
-            background-color: #ffffff;
-        }
-    
-        img
-        {
-            height: 330px;
-            width: 330px;
-            border-radius: 2px;
-            box-shadow: 0px 0px 14px 1px rgba(201, 0, 151, 0.15);
-        }
-
-        .artist-name
-        {
-            background-color: transparent;
-            color: black;
-            text-align: center;
-            margin: 1.5rem;
-            font-size: 2rem;
-        }
-
-        .buy-ticket-link
-        {
-            cursor: pointer;
-            font-size: 2rem;
-            display: inline;
-            margin: 2rem 5rem;
-            display: flex;
-            justify-content: center;
-            padding: 10px;
-            border-radius: 2px;
-            background-color: black;
-            color: white;
-            text-decoration: none;
-
-            border: solid 2px transparent;
-            
-            transition: all .3s;
-
-            &:hover 
-            {
-                background-color: white;
-                color: black;
-                border: solid 2px black;
-                // box-shadow: 0px 0px 14px 1px rgba(201, 0, 151, 0.1);
-            }
-        }
-
-        .event-icon-container
-        {
-            background-color: transparent;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            .location-icon
-            {
-                background-color: transparent;
-                color: black;
-                font-size: 2rem;
-            }
-
-            p
-            {
-                background-color: transparent;
-                font-size: 1.2rem;
-            }
-        }
-
-    }
+    text-align: center;
+    color: white;
+    font-size: 5rem;
+    margin: 20px;
+  }
 }
 
-    @keyframes pop-in {
-    0% { opacity: 0; transform: scale(0.5); }
-    100% { opacity: 1; transform: scale(1); }
+.events-text-card-container {
+  background: url(../../../assets/concertbackground.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  height: 16rem;
+  border-radius: 2px;
+  background-color: rgb(216, 216, 216);
+  margin: 1.8rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  .events-text-card {
+    height: 12rem;
+    border-radius: 2px;
+    padding: 15px;
+    display: inline-block;
+    margin: 2rem;
+    background-color: rgba(211, 211, 211, 0.8);
+
+    p {
+      background-color: transparent;
+      font-size: 1.2rem;
+      text-align: center;
+      margin: 10px;
+    }
+  }
+}
+
+.event-cards-container {
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: space-evenly;
+  grid-gap: 3rem;
+
+  .event-container {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 14px 1px rgba(0, 151, 201, 0.5);
+    animation: pop-in 0.5s;
+
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: #ffffff;
     }
 
+    img {
+      height: 330px;
+      width: 330px;
+      border-radius: 2px;
+      box-shadow: 0px 0px 14px 1px rgba(201, 0, 151, 0.15);
+    }
 
-.event-button-container
-{
+    .artist-name {
+      background-color: transparent;
+      color: black;
+      text-align: center;
+      margin: 1.5rem;
+      font-size: 2rem;
+    }
+
+    .buy-ticket-link {
+      cursor: pointer;
+      font-size: 2rem;
+      display: inline;
+      margin: 2rem 5rem;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      border-radius: 2px;
+      background-color: black;
+      color: white;
+      text-decoration: none;
+
+      border: solid 2px transparent;
+
+      transition: all 0.3s;
+
+      &:hover {
+        background-color: white;
+        color: black;
+        border: solid 2px black;
+      }
+    }
+
+    .event-icon-container {
+      background-color: transparent;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .location-icon {
+        background-color: transparent;
+        color: black;
+        font-size: 2rem;
+      }
+
+      p {
+        background-color: transparent;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+@keyframes pop-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.event-button-container {
+  display: flex;
+  justify-content: center;
+
+  .event-buy-button {
+    cursor: pointer;
+    text-decoration: none;
+    font-family: $rationale;
+    border: none;
+    border-radius: 2px;
+    padding: 20px;
+    font-size: 2rem;
+    justify-content: center;
+    margin: 3rem;
+    color: black;
+    background-color: white;
+    border: solid 2px transparent;
+
+    transition: all 0.3s;
+
+    &:hover {
+      color: white;
+      background-color: black;
+      border: solid 2px white;
+    }
+  }
+}
+
+.divider {
+  background-color: rgb(6, 93, 125);
+  box-shadow: 0px 0px 14px 1px rgba(201, 0, 151, 0.2);
+  padding: 1px;
+}
+
+@media screen and (max-width: 1400px) {
+  .logo-container {
+    margin-left: 0;
     display: flex;
     justify-content: center;
-    
-    .event-load-more-button
-    {
-        cursor: pointer;
-        text-decoration: none;
-        font-family: $rationale;
-        border: none;
-        border-radius: 2px;
-        padding: 20px;
-        font-size: 2rem;
-        justify-content: center;
-        margin: 3rem;
-        color: black;
-        background-color: white;
-        border: solid 2px transparent;
 
-        transition: all .3s;
-
-        &:hover
-        {
-            color: white;
-            background-color: black;
-            border: solid 2px white;
-        }
+    h1 {
+      font-size: 6.5rem;
     }
+  }
+
+  .events-text-card-container {
+    height: 10%;
+    margin: 2% 2%;
+  }
+
+  .event-cards-container {
+    grid-gap: 1rem;
+
+    .event-container {
+      padding: 18px;
+
+      img {
+        height: 280px;
+        width: 280px;
+      }
+    }
+  }
 }
 
+@media screen and (max-width: 1044px) {
+  .logo-container {
+    h1 {
+      font-size: 4.8rem;
+    }
+  }
 
-.divider
-{
-    background-color: rgb(6, 93, 125);
-    box-shadow: 0px 0px 14px 1px rgba(201, 0, 151, 0.2);
-    // box-shadow: 0px 0px 14px 1px rgba(0, 151, 201, 0.5);
-    padding: 1px;
+  .events-container {
+    .events-title {
+      font-size: 4.2rem;
+    }
+  }
+
+  .events-text-card-container {
+    height: 12%;
+
+    .events-text-card {
+      height: 10rem;
+
+      p {
+        font-size: 1.1rem;
+        margin: 8px;
+      }
+    }
+  }
+
+  .event-cards-container {
+    .event-container {
+      padding: 15px;
+
+      img {
+        height: 200px;
+        width: 200px;
+      }
+
+      .artist-name {
+        margin: 0.6rem;
+        font-size: 1.5rem;
+      }
+
+      .event-icon-container {
+        .location-icon {
+          font-size: 1.8rem;
+        }
+
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  // .logo-container {
+  //   h1 {
+  //     font-size: 4.8rem;
+  //   }
+  // }
+
+  // .events-container {
+  //   .events-title {
+  //     font-size: 4.2rem;
+  //   }
+  // }
+
+  // .events-text-card-container {
+  //   background-size: cover;
+  //   background-repeat: no-repeat;
+  //   background-position: 100% 100%;
+  //   height: 13%;
+  //   margin: 2% 2%;
+
+  //   .events-text-card {
+  //     height: 12rem;
+  //     border-radius: 2px;
+  //     padding: 15px;
+  //     display: inline-block;
+  //     margin: 2rem;
+  //     background-color: rgba(211, 211, 211, 0.8);
+
+  //     p {
+  //       background-color: transparent;
+  //       font-size: 1.1rem;
+  //       text-align: center;
+  //       margin: 10px;
+  //     }
+  //   }
+  // }
+
+  // .event-cards-container {
+  //   grid-template-columns: repeat(3, auto);
+  //   grid-gap: 1rem;
+
+  //   .event-container {
+  //     padding: 15px;
+
+  //     img {
+  //       height: 200px;
+  //       width: 200px;
+  //     }
+
+  //     .artist-name {
+  //       margin: 0.6rem;
+  //       font-size: 1.5rem;
+  //     }
+
+  //     .buy-ticket-link {
+  //       cursor: pointer;
+  //       font-size: 2rem;
+  //       display: inline;
+  //       margin: 2rem 5rem;
+  //       display: flex;
+  //       justify-content: center;
+  //       padding: 10px;
+  //       border-radius: 2px;
+  //       background-color: black;
+  //       color: white;
+  //       text-decoration: none;
+
+  //       border: solid 2px transparent;
+
+  //       transition: all 0.3s;
+
+  //       &:hover {
+  //         background-color: white;
+  //         color: black;
+  //         border: solid 2px black;
+  //       }
+  //     }
+
+  //     .event-icon-container {
+  //       background-color: transparent;
+  //       display: flex;
+  //       flex-direction: column;
+  //       align-items: center;
+
+  //       .location-icon {
+  //         background-color: transparent;
+  //         color: black;
+  //         font-size: 1.8rem;
+  //       }
+
+  //       p {
+  //         background-color: transparent;
+  //         font-size: 1rem;
+  //       }
+  //     }
+  //   }
+  // }
+  .logo-container {
+    h1 {
+      font-size: 2.6rem;
+    }
+  }
+
+  .header-links {
+    .link {
+      margin: 1rem 1.4rem;
+
+      a {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .events-container {
+    .events-title {
+      font-size: 4rem;
+      margin: 10px;
+    }
+  }
+
+  .events-text-card-container {
+    height: 10%;
+
+    .events-text-card {
+      height: 10rem;
+
+      p {
+        font-size: 1rem;
+        margin: 8px;
+      }
+    }
+  }
+
+  .event-cards-container {
+    grid-template-columns: repeat(2, auto);
+
+    .event-container {
+      padding: 15px;
+
+      img {
+        height: 160px;
+        width: 160px;
+      }
+
+      .artist-name {
+        margin: .5rem;
+        font-size: 1.2rem;
+      }
+
+      .event-icon-container {
+        .location-icon {
+          font-size: 1.5rem;
+        }
+
+        p {
+          font-size: .9rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .logo-container {
+    h1 {
+      font-size: 2rem;
+    }
+  }
+
+  .header-links {
+    .link {
+      margin: .5rem 1rem;
+
+      a {
+        font-size: .7rem;
+      }
+    }
+  }
+
+  .events-container {
+    .events-title {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+  }
+
+  .events-text-card-container {
+    height: 10%;
+
+    .events-text-card {
+      height: 10rem;
+
+      p {
+        font-size: .85rem;
+        margin: 8px;
+      }
+    }
+  }
+
+  .event-cards-container {
+    grid-template-columns: repeat(2, auto);
+
+    .event-container {
+      padding: 15px;
+
+      img {
+        height: 120px;
+        width: 120px;
+      }
+
+      .artist-name {
+        margin: .5rem;
+        font-size: 1rem;
+      }
+
+      .event-icon-container {
+        .location-icon {
+          font-size: 1.2rem;
+        }
+
+        p {
+          font-size: .6rem;
+        }
+      }
+    }
+  }
+
+  .event-button-container {
+    .event-buy-button {
+      padding: 20px;
+      font-size: 1.2rem;
+      margin: 3rem;
+    }
+  }
 }

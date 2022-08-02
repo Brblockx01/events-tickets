@@ -23,4 +23,15 @@
 }
 .extra-box p {
   background-color: transparent;
+}
+
+@media screen and (max-width: 1044px) {
+  .extra-box {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .extra-box {
+    font-size: 1rem;
+  }
 }/*# sourceMappingURL=Extra.css.map */

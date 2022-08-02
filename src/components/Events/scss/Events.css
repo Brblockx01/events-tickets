@@ -3,7 +3,6 @@
   background-color: transparent;
   height: 13rem;
   color: white;
-  /* Created with https://www.css-gradient.com */
   font-family: "Rationale", sans-serif;
 }
 
@@ -164,7 +163,7 @@
   display: flex;
   justify-content: center;
 }
-.event-button-container .event-load-more-button {
+.event-button-container .event-buy-button {
   cursor: pointer;
   text-decoration: none;
   font-family: "Rationale", sans-serif;
@@ -179,7 +178,7 @@
   border: solid 2px transparent;
   transition: all 0.3s;
 }
-.event-button-container .event-load-more-button:hover {
+.event-button-container .event-buy-button:hover {
   color: white;
   background-color: black;
   border: solid 2px white;
@@ -189,4 +188,159 @@
   background-color: rgb(6, 93, 125);
   box-shadow: 0px 0px 14px 1px rgba(201, 0, 151, 0.2);
   padding: 1px;
+}
+
+@media screen and (max-width: 1400px) {
+  .logo-container {
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .logo-container h1 {
+    font-size: 6.5rem;
+  }
+  .events-text-card-container {
+    height: 10%;
+    margin: 2% 2%;
+  }
+  .event-cards-container {
+    grid-gap: 1rem;
+  }
+  .event-cards-container .event-container {
+    padding: 18px;
+  }
+  .event-cards-container .event-container img {
+    height: 280px;
+    width: 280px;
+  }
+}
+@media screen and (max-width: 1044px) {
+  .logo-container h1 {
+    font-size: 4.8rem;
+  }
+  .events-container .events-title {
+    font-size: 4.2rem;
+  }
+  .events-text-card-container {
+    height: 12%;
+  }
+  .events-text-card-container .events-text-card {
+    height: 10rem;
+  }
+  .events-text-card-container .events-text-card p {
+    font-size: 1.1rem;
+    margin: 8px;
+  }
+  .event-cards-container .event-container {
+    padding: 15px;
+  }
+  .event-cards-container .event-container img {
+    height: 200px;
+    width: 200px;
+  }
+  .event-cards-container .event-container .artist-name {
+    margin: 0.6rem;
+    font-size: 1.5rem;
+  }
+  .event-cards-container .event-container .event-icon-container .location-icon {
+    font-size: 1.8rem;
+  }
+  .event-cards-container .event-container .event-icon-container p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .logo-container h1 {
+    font-size: 2.6rem;
+  }
+  .header-links .link {
+    margin: 1rem 1.4rem;
+  }
+  .header-links .link a {
+    font-size: 1rem;
+  }
+  .events-container .events-title {
+    font-size: 4rem;
+    margin: 10px;
+  }
+  .events-text-card-container {
+    height: 10%;
+  }
+  .events-text-card-container .events-text-card {
+    height: 10rem;
+  }
+  .events-text-card-container .events-text-card p {
+    font-size: 1rem;
+    margin: 8px;
+  }
+  .event-cards-container {
+    grid-template-columns: repeat(2, auto);
+  }
+  .event-cards-container .event-container {
+    padding: 15px;
+  }
+  .event-cards-container .event-container img {
+    height: 160px;
+    width: 160px;
+  }
+  .event-cards-container .event-container .artist-name {
+    margin: 0.5rem;
+    font-size: 1.2rem;
+  }
+  .event-cards-container .event-container .event-icon-container .location-icon {
+    font-size: 1.5rem;
+  }
+  .event-cards-container .event-container .event-icon-container p {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 420px) {
+  .logo-container h1 {
+    font-size: 2rem;
+  }
+  .header-links .link {
+    margin: 0.5rem 1rem;
+  }
+  .header-links .link a {
+    font-size: 0.7rem;
+  }
+  .events-container .events-title {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  .events-text-card-container {
+    height: 10%;
+  }
+  .events-text-card-container .events-text-card {
+    height: 10rem;
+  }
+  .events-text-card-container .events-text-card p {
+    font-size: 0.85rem;
+    margin: 8px;
+  }
+  .event-cards-container {
+    grid-template-columns: repeat(2, auto);
+  }
+  .event-cards-container .event-container {
+    padding: 15px;
+  }
+  .event-cards-container .event-container img {
+    height: 120px;
+    width: 120px;
+  }
+  .event-cards-container .event-container .artist-name {
+    margin: 0.5rem;
+    font-size: 1rem;
+  }
+  .event-cards-container .event-container .event-icon-container .location-icon {
+    font-size: 1.2rem;
+  }
+  .event-cards-container .event-container .event-icon-container p {
+    font-size: 0.6rem;
+  }
+  .event-button-container .event-buy-button {
+    padding: 20px;
+    font-size: 1.2rem;
+    margin: 3rem;
+  }
 }/*# sourceMappingURL=Events.css.map */

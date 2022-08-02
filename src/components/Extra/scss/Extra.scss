@@ -1,33 +1,46 @@
-@import '../../../scss/root/index';
+@import "../../../scss/root/index";
 
-.extra-container
-{
-    font-family: $rationale;
-    color: white;
-    background-color: black;
+.extra-container {
+  font-family: $rationale;
+  color: white;
+  background-color: black;
 }
 
-.extra-boxes-container
-{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 15px;
+.extra-boxes-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 15px;
 }
 
-.extra-box
-{
-    // background-color: transparent;
-    display: inline-block;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 2px;
-    background-color: white;
-    color: black;
-    font-size: 1.5rem;
+.extra-box {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 2px;
+  background-color: white;
+  color: black;
+  font-size: 1.5rem;
 
-    p
-    {
-        background-color: transparent;
-    }
+  p {
+    background-color: transparent;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+}
+
+@media screen and (max-width: 1044px) {
+  .extra-box {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .extra-box {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
 }
